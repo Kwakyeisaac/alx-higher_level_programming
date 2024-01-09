@@ -37,18 +37,18 @@ int is_palindrome(listint_t **head)
 }
 
 /**
- * compare_list - it compare two lists
+ * compare_lists - it compare two lists
  * @head: a pointer to the head node
  * @middle: a pointer to the middle node
- * @len:
- * the length of the list
+ * @len: the length of the list
  * Return: if the same 1, if not 0
  */
 int compare_lists(listint_t *head, listint_t *middle, int len)
 {
 	int i;
+
 	if (head == NULL || middle == NULL)
-		return (1);
+		return (i);
 	for (i = 0; i < len; i++)
 	{
 		if (head->n != middle->n)
@@ -56,7 +56,7 @@ int compare_lists(listint_t *head, listint_t *middle, int len)
 		head = head->next;
 		middle = middle->next;
 	}
-	return (1);
+	return (i);
 }
 
 /**
